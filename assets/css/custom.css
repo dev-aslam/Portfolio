@@ -1,0 +1,19 @@
+.profile-img-container{
+    display: flex;
+    justify-content: center;
+}
+
+.profile-img{
+    height: 450px;
+}
+
+.about-content{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.service-image{
+    height: 80px;
+    width: 80px;
+}
