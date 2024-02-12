@@ -385,22 +385,31 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="https://formspree.io/f/xayrowpk" method="post">
+            <form action="https://formspree.io/f/xayrowpk" method="post" id="contact-form">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name">
+                  <p class="name-validation validation display-none mx-3 pt-2" >Name is required</p>
+                  <p class="name-validation-length validation display-none mx-3 pt-2" >Name should not exceed more than 25 characters</p>
+                  </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
+                  <p class="email-validation display-none validation mx-3 pt-2" >Email is required</p>
+                  <p class="email-wrong-validation display-none validation mx-3 pt-2" >please enter a correct email</p>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                <p class="subject-validation display-none validation mx-3 pt-2" >Subject is required</p>
+                <p class="subject-validation-length validation display-none mx-3 pt-2" >Subject should not exceed more than 50 characters</p>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" id="message"></textarea>
+                <p class="message-validation display-none validation mx-3 pt-2" >Message is required</p>
+                <p class="message-validation-length validation display-none mx-3 pt-2" >message should not exceed more than 500 characters</p>
               </div>
-              <div class="text-center"><button type="submit" class="btn btn-primary rounded-pill mt-4 px-3 py-2">Send Message</button></div>
+              <div class="text-center"><button type="submit" class="btn btn-primary rounded-pill mt-4 px-3 py-2" id="submit">Send Message</button></div>
+              <p class="form-validation validation display-none mx-3 pt-2" >Please make sure that all the fields are filled</p>
             </form>
           </div>
 
@@ -453,6 +462,9 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!--Form validation JS-->
+  <script src="assets/js/from-validation.js"></script>
 
 </body>
 

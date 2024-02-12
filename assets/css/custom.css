@@ -17,3 +17,13 @@
     height: 80px;
     width: 80px;
 }
+
+.display-none{
+    display: none;
+}
+
+p.validation{
+    color: red;
+    font-size: 14px;
+    margin-bottom: 0 !important;
+}
